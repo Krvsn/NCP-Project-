@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .flex-container1{
+      background-color: #f1f1f1;
+      margin: 10px;
+      padding: 20px;
+      font-size: 30px;
+      flex: 50%;
+    }
+    .flex-container2{
+      background-color: #f1f1f1;
+      margin: 10px;
+      padding: 20px;
+      font-size: 30px;
+      flex: 50%;
+    }
+    .bar{
+      border: 6px solid black;   
+      padding: 50px;
+      background-image:url("cstoppic1.jpg");
+      color: yellow;
+     }
+body 
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #258be3;
+}
+</style>
+</head>
+<body>
+  <div class="bar"> 
+    <h1>HEllo</h1>   
+    <h2><a href="#home" style="color:yellow;">Home</a><a>>Contact us</a></h2>
+    
+  </div>
+    <div class="flex-container1">
+        <div>
+          <h1>Have any questions?</h1>
+          <p>We are here to clarify your queries.Kindly write them in the given area with appropiate email id </p>
+        </div>
+        <div class="flex-container2">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                  <option value="India">India</option>
+                  <option value="China">China</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Your heart">Your heart</option>
+                  <option value="South Korea">South Korea</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="Newzland">Newzland</option>
+                  <option value="Greenland">Greenland</option>
+                  <option value="Philipiness">Philipiness</option>
+                </select>
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+              </form>
+        </div>
+      </div>
+</body>
+</html>
