@@ -98,17 +98,22 @@
     display: block;
     padding: 20px;
     color: var(--color1);
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     font-weight: bolder;
     background-color: transparent;
     text-decoration: none;
   }
   
   li a:hover {
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     font-weight: 1200;
   }
   
+  .la a:hover {
+    font-size: 1.8vw;
+    font-weight: 1200;
+  }
+
   a, a:link, a:visited{
     color: var(--color1);
     text-decoration: none;
@@ -127,6 +132,10 @@
     font-size: 1.0375vw;
   }
 
+  .image:hover {
+    transform: scale(1.5);
+  }
+
   .review td {
     padding-top: 20px;
     padding: 10px;
@@ -140,6 +149,11 @@
     cursor: pointer;
     z-index: 2;
   }
+
+  #icon:hover {
+    transform: scale(1.4);
+  }
+
   .light {
     --primary-color: rgb(65, 68, 70);
     --secondary-color: rgb(208, 223, 235);
