@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <page name="payment">
+    <Row  index="1">
+    <Column1>Billing</Column1>
+    </Row >
+    <Row  index="2">
+    <Column1>Full Name                                                 
+            Email 
+    </Column1>
+    </Row >
+    <Row  index="3">
+    <Column1>Your Purchase</Column1>
+    </Row >
+    <Row  index="5">
+    <Column1>Subtotal</Column1>
+    </Row >
+    <Row  index="6" />
+    <Row  index="7">
+    <Column1>Payment</Column1>
+    </Row >
+    <Row  index="8">
+    <Column1>Accepted Cards </Column1>
+    </Row ><Row  index="9">
+    <Column1>Name on Card                                                
+            Credit card number                                                
+            Exp Month                                                                                                    
+            Exp Year 
+    </Column1>
+    </Row >
+    <Row  index="10">
+    <Column1>CVV </Column1>
+    </Row >
+    </page>
+</root>

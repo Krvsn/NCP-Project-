@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <page name="homepage">
+    <Row  index="1">
+    <Column />
+    <menu>Course Up is a place where you can learn courses of your choice, build your knowledge, earn certificates and make your resume shine </menu>
+    <Column />
+    </Row >
+    <Row  index="2">
+    <Column />
+    </Row >
+    <Row  index="3">
+    <Column> 2500+ Online Courses</Column>
+    <menu>                                                                                                                
+    Expert Instructors                                
+    Over thousands of well experienced, certified instructors                            
+    </menu>
+    <Column>                                                                                                                
+    Life Time Access                                
+    Learn at your own pace and schedule                            
+    </Column>
+    </Row >
+    <Row  index="4">
+    <section>We offer overs thousands of courses and experts keep track of you</section>
+    <Row index="5">What our students say </Row>
+    <Column />
+    </Row >
+    <Row  index="6">
+    <Column> </Column>
+    <menu>                                                                                    
+    ""This is a great platform for courses and I love the immediate responses from the instructors""                                    
+    Abirami                                
+    </menu>
+    <Column>                                                                                    
+    ""Easy to use and legit certificates enhanced my resume.""                                    
+    Abin                                
+    </Column>
+    </Row >
+    <Row  index="7">
+    <Column>
+    ""The courses are perfectly made and I could learn many courses at leisure.""
+    Aparna
+    </Column>
+    </Row >
+    <Row  index="8">
+    <Column>Register Now</Column>
+    </Row >
+    </page>
+</root>

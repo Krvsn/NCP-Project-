@@ -1,17 +1,18 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <meta name="description" content="Course Website Homepage"/>
+    <meta name="description" content="Course Website Payment Sucess"/>
     <meta name="author" content="Adithi Balaji"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Course Up</title>
+    <title>Success!</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
 </head>
 <style>
     body {
         text-align: center;
-        padding: 40px 0;
+        padding: 35px 0;
         background: #EBF0F5;
+        overflow: hidden;
     }
 
     h1 {
@@ -32,27 +33,34 @@
     i {
         color: #9ABC66;
         font-size: 100px;
-        line-height: 200px;
+        line-height: 180px;
         margin-left: -15px;
     }
 
     .card {
         background: white;
-        padding: 60px;
+        padding: 50px;
         border-radius: 4px;
         box-shadow: 0 2px 3px #C8D0D8;
         display: inline-block;
         margin: 0 auto;
     }
+
+    .la:hover {
+        font-size: 1.4vw;
+    }
 </style>
 
 <body>
+    <!--#include file="paymentsuccess.xml" -->
     <div class="card">
         <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
             <i class="checkmark">✓</i>
         </div>
         <h1>Payment Successful!!</h1>
         <p>Your course has been purchased.<br />Happy Learning!</p>
+        <br/>
+        <p style="font-size: 1.2vw;"><a class="la" href="homepage.html" style="text-decoration: none;">Go back to the homepage.</a></p>
     </div>
 </body>
 

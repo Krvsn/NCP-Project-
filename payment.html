@@ -2,24 +2,75 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <meta name="description" content="Course Website Homepage"/>
+    <meta name="description" content="Course Website Payment"/>
     <meta name="author" content="Adithi Balaji"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Course Up</title>
+    <title>Checkout</title>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
     
     <script>
-    function submitForm()
+
+
+        function validate()
+        {
+            var name = document.myForm.firstname.value;
+            var email = document.myForm.email.value;
+            var cname = document.myForm.cardname.value;
+            var cnum = document.myForm.cardnumber.value;
+            var emon = document.myForm.expmonth.value;
+            var eyr = document.myForm.expyear.value;
+            var cvv = document.myForm.cvv.value;
+
+            var letters = /^[a-zA-Z]+$/;
+            var numbers1 = /^\d+(-\d+)*$/;
+            var numbers = /^[0-9]+$/;
+
+            if (name==null || name=="" || (!name.match(letters)))
+            {  
+                alert("Please enter a valid name.");  
+                return false;  
+            }
+            else if(email.indexOf("@") == -1 || email.length < 5)
+            {  
+                alert("Please enter a valid email.");  
+                return false;  
+            } 
+            else if (cname==null || cname=="" || (!(cname.match(letters))))
+            {
+                alert("Please enter a valid card name.")
+                return false;
+            }
+            else if(cnum==null || cnum=="" || (!(cnum.match(numbers1)) || cnum.length != 19))
+            {
+                alert("Please enter a valid credit card number.")
+                return false;
+            }
+            else if (emon==null || emon=="" || (!(emon.match(letters))))
+            {
+                alert("Please enter a valid month.")
+                return false;
+            }
+            else if(eyr==null || eyr=="" || eyr.length != 4 || (!(eyr.match(numbers))))
+            {
+                alert("Please enter a valid year.")
+                return false;
+            }
+            else if(cvv==null || cvv=="" || cvv.length != 3 || (!(cvv.match(numbers))))
+            {
+                alert("Please enter a valid CVV.")
+                return false;
+            }
+            else
             {
                 document.myForm.target = "_blank";
                 window.open("paymentsuccess.html");
                 document.myForm.submit();
             }
-    
-    </script>
+        }
+        </script>
 
     <style>
         :root {
@@ -31,106 +82,104 @@
         }
 
         body {
-        font-family: 'Raleway', sans-serif;
-        font-size: 17px;
-        padding: 8px;
-        background-image: linear-gradient(to left, var(--bg1), var(--bg2));
-        color: var(--color1);
-        min-height:100%;
-        position:relative;
-
-
+            font-family: 'Raleway', sans-serif;
+            font-size: 17px;
+            padding: 8px;
+            background-image: linear-gradient(to left, var(--bg1), var(--bg2));
+            color: var(--color1);
+            min-height:100%;
+            position:relative;
         }
 
         * {
-        box-sizing: border-box;
+            box-sizing: border-box;
         }
 
         .row {
-        display: -ms-flexbox; 
-        display: flex;
-        -ms-flex-wrap: wrap; 
-        flex-wrap: wrap;
-        margin: 0 -16px;
+            display: -ms-flexbox; 
+            display: flex;
+            -ms-flex-wrap: wrap; 
+            flex-wrap: wrap;
+            margin: 0 -16px;
         }
 
         .col-25 {
-        -ms-flex: 25%; 
-        flex: 25%;
+            -ms-flex: 25%; 
+            flex: 25%;
         }
 
         .col-50 {
-        -ms-flex: 50%; 
-        flex: 50%;
+            -ms-flex: 50%; 
+            flex: 50%;
         }
 
         .col-75 {
-        -ms-flex: 75%;
-        flex: 75%;
+            -ms-flex: 75%;
+            flex: 75%;
         }
 
         .col-25,
         .col-50,
         .col-75 {
-        padding: 0 16px;
+            padding: 0 16px;
         }
 
         .container {
-        background-color: (--primary-color);
-        padding: 5px 20px 15px 20px;
-        border: 1px solid #88aae7;
-        border-radius: 10px;
+            background-color: (--primary-color);
+            padding: 5px 20px 15px 20px;
+            border: 1px solid #88aae7;
+            border-radius: 10px;
         }
 
         input[type=text] {
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 12px;
-        border: 1px solid var(--color1);
-        border-radius: 15px;
-        background-color: var(--primary-color);
-        color: var(--secondary-color);
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 12px;
+            border: 1px solid var(--color1);
+            border-radius: 15px;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
         }
 
         label {
-        margin-bottom: 10px;
-        display: block;
+            margin-bottom: 10px;
+            display: block;
         }
 
         .icon-container {
-        margin-bottom: 20px;
-        padding: 7px 0;
-        font-size: 24px;
+            margin-bottom: 20px;
+            padding: 7px 0;
+            font-size: 24px;
         }
 
         .btn {
-        background-color: var(--primary-color);
-        color: var(--secondary-color);
-        padding: 12px;
-        margin: 10px 0;
-        border: none;
-        width: 100%;
-        border-radius: 18px;
-        cursor: pointer;
-        font-size: 17px;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            width: 100%;
+            border-radius: 18px;
+            cursor: pointer;
+            font-size: 17px;
         }
 
         .btn:hover {
-        background-color: #3a31b5;
-        color: var(--color1);
+            background-color: #3a31b5;
+            color: var(--color1);
         }
 
         a {
-        color: #2196F3;
+            color: #2196F3;
         }
 
         hr {
-        border: 1px solid lightgrey;
+            border: 1px solid lightgrey;
         }
 
         span.price {
-        float: right;
-        color: grey;
+            float: right;
+            color: grey;
         }
 
         ul {
@@ -185,9 +234,11 @@
             --bg2: #3461b4;
         }
     </style>
+
 </head>
 
 <body>
+    <!--#include file="payment.xml" -->
     <div>
         <ul>
             <li><img id="icon" style="padding: 20px 28px; height: 25px;" src="img/light1.png" alt= "light" float="right" />
@@ -199,57 +250,54 @@
             </li>
         </ul>
     <div class="row">
-    <div class="col-75">
-        <div class="container">
-        <form name="myForm" action="/action_page.php">
-        
-            <div class="row">
-            <div class="col-50">
-                <h3>Billing</h3>
-                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-                <label for="email"><i class="fa fa-envelope"></i> Email</label>
-                <input type="text" id="email" name="email" placeholder="john@example.com">
+        <div class="col-75">
+            <div class="container">
+                <form name="myForm" method= "post" action="/action_page.php">
+                
+                    <div class="row">
+                    <div class="col-50">
+                        <h3>Billing</h3>
+                        <label for="fname"> Full Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                        <label for="email"> Email</label>
+                        <input type="text" id="email" name="email" placeholder="john@example.com">
+                        <div class="row">
+                        <div class="col-50">
+                            <h3 style="box-shadow: 2px rgb(101, 146, 206);">Your Purchase</h3>
+                            <bottom style="float: right;"><h3>Subtotal</h3></bottom>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="fname">Accepted Cards</label>
+                        <div class="icon-container">
+                        <img src="img/visa.svg" style="height: 2.3vw;"/>
+                        <img src="img/mc.svg" style="height: 2.3vw;"/>
+                        <img src="img/pytm.svg" style="height: 2.3vw;"/>
 
-                <div class="row">
-                <div class="col-50">
-                    <h3 style="box-shadow: 2px rgb(101, 146, 206);">Your Purchase</h3>
-                    <bottom style="float: right;"><h3>Subtotal</h3></bottom>
-                </div>
-                </div>
+                        </div>
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                        <div class="row">
+                        <div class="col-50">
+                            <label for="expyear">Exp Year</label>
+                            <input type="text" id="expyear" name="expyear" placeholder="2018">
+                        </div>
+                        <div class="col-50">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="352">
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <input type="submit" value="Confirm and Pay" class="btn" onclick="return validate()"/>
+                </form>
             </div>
-
-            <div class="col-50">
-                <h3>Payment</h3>
-                <label for="fname">Accepted Cards</label>
-                <div class="icon-container">
-                <img src="img/visa.svg" style="height: 2.3vw;"/>
-                <img src="img/mc.svg" style="height: 2.3vw;"/>
-                <img src="img/pytm.svg" style="height: 2.3vw;"/>
-
-                </div>
-                <label for="cname">Name on Card</label>
-                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-                <label for="ccnum">Credit card number</label>
-                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                <label for="expmonth">Exp Month</label>
-                <input type="text" id="expmonth" name="expmonth" placeholder="September">
-                <div class="row">
-                <div class="col-50">
-                    <label for="expyear">Exp Year</label>
-                    <input type="text" id="expyear" name="expyear" placeholder="2018">
-                </div>
-                <div class="col-50">
-                    <label for="cvv">CVV</label>
-                    <input type="text" id="cvv" name="cvv" placeholder="352">
-                </div>
-                </div>
-            </div>
-            
-            </div>
-            <input type="submit" value="Confirm and Pay" class="btn" onclick="submitForm()"/>
-        </form>
-        </div>
     </div>
     
     </div>
