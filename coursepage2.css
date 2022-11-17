@@ -69,7 +69,7 @@
 /* Style the tab content */
 .tabcontent {float: left;
     padding: 10px 12px;
-    background-image: url("mlp4.jpg");
+    background-image: url("img/mlp4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 70%;
@@ -80,7 +80,7 @@
 
 .tabcontentw {float: left;
     padding: 10px 12px;
-    background-image: url("webdpage1.jpg");
+    background-image: url("img/webdpage1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 70%;
@@ -150,7 +150,7 @@
     /* Style the tab content */
 .tabcontentc {float: left;
     padding: 10px 12px;
-    background-image: url("cspage2.jpg");
+    background-image: url("img/cspage2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 70%;
@@ -191,7 +191,7 @@
         /* Style the tab content */
 .tabcontentd {float: left;
         padding: 10px 12px;
-        background-image: url("dspage1.jpg");
+        background-image: url("img/dspage1.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         width: 70%;
