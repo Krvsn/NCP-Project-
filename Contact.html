@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
@@ -28,8 +33,40 @@
       background-image:url("cstoppic1.jpg");
       color: yellow;
      }
+
+     ul {
+            list-style-type: none;
+            margin: 0;
+            padding-top: 10px;
+            overflow: hidden;
+        }
+        
+        li {
+            float: right;
+        }
+        
+        li a {
+            display: block;
+            padding: 2px 20px 5px 20px;
+            font-size: 1.5vw;
+            font-weight: bolder;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            font-size: 1.8vw;
+            font-weight: 1200;
+        }
+        
+        a, a:link, a:visited{
+            text-decoration: none;
+
+        }
 body 
-* {box-sizing: border-box;}
+* {box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
 
 input[type=text], select, textarea {
   width: 100%;
@@ -58,9 +95,15 @@ input[type=submit]:hover {
 </head>
 <body>
   <div class="bar"> 
-    <h1>HEllo</h1>   
-    <h2><a href="#home" style="color:yellow;">Home</a><a>>Contact us</a></h2>
-    
+    <ul>
+        <li><img id="icon" style="padding: 20px 28px; height: 25px;" src="img/light.png" float="right" /></li>
+        <li style="padding-top: 3px;"><a href="Contact.html">Contact Us</a></li>
+        <li style="padding-top: 3px;"><a href="profile.html">Profile</a></li>
+        <li style="padding-top: 3px;"><a href="avatar.html">About</a></li>
+        <li style="padding-top: 3px;"><a href="payment.html">Cart</a></li>
+        <li style="padding-top: 3px;"><a href="coursepage.html">Courses</a></li>
+        <li style="padding-top: 3px;"><a href="homepage.html">Home</a></li>
+    </ul>
   </div>
     <div class="flex-container1">
         <div>

@@ -57,7 +57,7 @@ function typeCourses(i, char_i=0){
 
 function deleteCourses(i, char_i=0){
   if (char_i < courses[i].length) {
-    document.getElementById("t1").innerHTML = "The most popular courses are"+(courses[i].substring(0, (courses[i].length)-char_i-1));
+    document.getElementById("t1").innerHTML = "Our most popular courses are"+(courses[i].substring(0, (courses[i].length)-char_i-1));
     char_i++;
     setTimeout(function(){deleteCourses(i, char_i);}, speed);
   }

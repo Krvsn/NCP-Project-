@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap" rel="stylesheet">
     <title>Document</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -13,7 +18,10 @@
 
     <style>
 
+        body {
+            font-family: 'Raleway', sans-serif;
 
+        }
           .form{
           padding-left: 50px;
                                }
@@ -23,6 +31,35 @@
             margin: 150px;
             margin-bottom: 0px;
 
+
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding-top: 10px;
+            overflow: hidden;
+        }
+        
+        li {
+            float: right;
+        }
+        
+        li a {
+            display: block;
+            padding: 2px 20px 5px 20px;
+            font-size: 1.5vw;
+            font-weight: bolder;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            font-size: 1.8vw;
+            font-weight: 1200;
+        }
+        
+        a, a:link, a:visited{
+            text-decoration: none;
 
         }
         .div2{
@@ -95,9 +132,18 @@
 <body>
 
     <header>
-
+        <ul>
+            <li><img id="icon" style="padding: 20px 28px; height: 25px;" src="img/light.png" float="right" /></li>
+            <li style="padding-top: 3px;"><a href="Contact.html">Contact Us</a></li>
+            <li style="padding-top: 3px;"><a href="profile.html">Profile</a></li>
+            <li style="padding-top: 3px;"><a href="avatar.html">About</a></li>
+            <li style="padding-top: 3px;"><a href="payment.html">Cart</a></li>
+            <li style="padding-top: 3px;"><a href="coursepage.html">Courses</a></li>
+            <li style="padding-top: 3px;"><a href="homepage.html">Home</a></li>
+        </ul>
     </header>
     <main >
+       
         <div class="div1"></div>
         <div class="div2">
         
