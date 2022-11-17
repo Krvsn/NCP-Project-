@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
+
+<!DOCTYPE payment [
+    <!ELEMENT payment(page, Row, Column1)>
+    <!ELEMENT page (#PCDATA)>
+    <!ELEMENT Row (#PCDATA)>
+    <!ELEMENT Column1 (#PCDATA)>
+]>
+
+<payment>
     <page name="payment">
     <Row  index="1">
     <Column1>Billing</Column1>
@@ -32,4 +40,4 @@
     <Column1>CVV </Column1>
     </Row >
     </page>
-</root>
+</payment>
