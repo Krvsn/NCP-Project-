@@ -1,0 +1,108 @@
+<!--ATTRACTIONS PAGE-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ml</title>
+    <style>
+    * {box-sizing: border-box;}
+    body {font-family: "Lato", sans-serif;}
+    </style>
+    <link rel="stylesheet" href="coursepage2.css">
+</head>
+<body bgcolor="lightcyan">
+<div class="pic">
+<img src="ml13.jpg" width=100% height="400"><br><br>
+<div class="content">
+<h1>MACHINE LEARNING</h1>
+</div></div>
+<div class="tab">
+    <button class="leftkeys" onclick="attractions(event, 'overview')" id="defaultOpen">Overview</button>
+    <button class="leftkeys" onclick="attractions(event, 'curriculum')">Curriculum</button>
+    <button class="leftkeys" onclick="attractions(event, 'prerequisites')">Prerequisites</button>
+    <button class="leftkeys" onclick="attractions(event, 'instructor')">Instructor</button>
+  </div>
+  
+  <div id="overview" class="tabcontent">
+    <h3>COURSE OVERVIEW</h3>
+    <dl>
+        <dd style="font-size: 20px;">Machine Learning is very important as it gives companies a view of the trends in business patterns and customer behaviour. Most leading companies like Uber, Google, and Facebook focus on Machine Learning as the main focus of their operations. 
+
+          There are multiple courses you can study to pursue a career in Machine Learning. So now let’s learn about them.</dd>
+        <br>
+        <dd style="font-size: 20px;">Machine Learning is one of the fastest-growing fields in the Computer Science industry. These days, every student wants to enhance their skills, the scope of the machine learning field as it has proven to be very beneficial in increasing the placement chances of candidates.</dd>
+        <br>
+        <dd style="font-size: 20px;">- 3 hours on-demand video</dd>
+        <dd style="font-size: 20px;">- 30 downloadable resources</dd>
+        <dd style="font-size: 20px;">- Full lifetime access</dd>
+        <dd style="font-size: 20px;">- Access on mobile and TV</dd>
+        <dd style="font-size: 20px;">- Certificate of completion</dd>
+      </dl>
+  </div>
+  
+  <div id="curriculum" class="tabcontent">
+    <h3>CURRICULUM</h3>
+    <dl>
+    <dd style="font-size: 20px;">To understand the Machine Learning Course Syllabus for Specialization Certifications, let’s look at the syllabus of the Machine Learning Course offered by Intellipaat.</dd>
+    <br>
+    <dd style="font-size: 20px;">Module 1 – Introduction to Machine Learning</dd>
+    <dd style="font-size: 20px;">Module 2 – Supervised Learning and Linear Regression</dd>
+    <dd style="font-size: 20px;">Module 3 – Classification and Logistic Regression</dd>
+    <dd style="font-size: 20px;">Module 4 – Decision Tree and Random Forest</dd>
+    <dd style="font-size: 20px;">Module 5 – Naïve Bayes and Support Vector Machine</dd>
+    <dd style="font-size: 20px;">Module 6 – Unsupervised Learning</dd>
+    <dd style="font-size: 20px;">Module 7 – Natural Language Processing and Text Mining</dd>
+    <dd style="font-size: 20px;">Module 8 – Introduction to Deep Learning</dd>
+    <dd style="font-size: 20px;">Module 9 – Time Series Analysis</dd>
+    </dl>
+  </div>
+  
+
+  <div id="prerequisites" class="tabcontent">
+    <h3>PREREQUISITES</h3>
+    <dl>
+        <dd style="font-size: 20px;">To get started with machine learning, you must be aware of the below points.</dd><br>
+        <dd style="font-size: 20px;">1.STATISTICS</dd><br>
+        <dd style="font-size: 20px;">2.LINEAR ALGEBRA</dd><br>
+        <dd style="font-size: 20px;">3.CALCULUS</dd><br>
+        <dd style="font-size: 20px;">4.PROBABILITY</dd><br>
+        <dd style="font-size: 20px;">5.PROGRAMMING LANGUAGES</dd>
+    </dl>
+  </div>
+  
+
+  <div id="instructor" class="tabcontent">
+    <h3>INSTRUCTOR</h3>
+    <u><p style="font-size: 20px;">HOLCZER BALASZ</p></u>
+    <dl><br>
+        <dd style="font-size: 20px;">-4.5 INSTRUCTOR RATINGS</dd>
+        <dd style="font-size: 20px;">-32308 REVIEWS</dd>
+        <dd style="font-size: 20px;">-251605 STUDENTS</dd>
+        <dd style="font-size: 20px;">-33 COURSES</dd><br>
+        <dd style="font-size: 20px;">My name is Balazs Holczer. I am from Budapest, Hungary. I am qualified as a physicist. At the moment I am working as a simulation engineer at a multinational company. I have been interested in algorithms and data structures and its implementations especially in Java since university. Later on I got acquainted with machine learning techniques, artificial intelligence, numerical methods and recipes such as solving differential equations, linear algebra, interpolation and extrapolation. These things may prove to be very very important in several fields: software engineering, research and development or investment banking. I have a special addiction to quantitative models such as the Black-Scholes model, or the Merton-model.</dd>
+    </dl>
+  </div>
+  
+<script>
+    function attractions(event, place) {
+      var i, tabcontent, leftkeys;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      leftkeys = document.getElementsByClassName("leftkeys");
+      for (i = 0; i < leftkeys.length; i++) {
+        leftkeys[i].className = leftkeys[i].className.replace(" active", "");
+      }
+      document.getElementById(place).style.display = "block";
+      event.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html> 
+
+
+
+

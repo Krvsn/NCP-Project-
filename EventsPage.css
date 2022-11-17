@@ -1,0 +1,302 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body
+{
+   background-image: url("img/bg1.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+ 
+.logo{
+    padding-top: 3px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.navbar li{
+    justify-content: center;
+    cursor: pointer;
+    color: black;
+    border: none;
+    transition: all .4s;
+}
+
+.navbar li:hover{
+    border-radius: 5px;
+    transform: translateY(-10px);
+    box-shadow: 0 7px 0 -2px #f85959,
+    0 15px 0 -4px #39a2db,
+    0 16px 10px -3px #39a2db;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    color: #555;
+}
+
+#set-img{
+    width: 30px;
+    height: 30px;
+}
+
+.container
+{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header
+{
+    
+    height: 100%;
+}
+.header .row
+{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.flex-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.flex-container>div 
+{
+    background-color: rgba(139, 77, 220, 0.2);
+    color: rgb(18, 16, 16);
+    width: 500px;
+    height: 450px;
+    border: none;
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 7px black;
+}
+
+#title
+{
+    font-weight:bolder;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: black;
+}
+
+.content
+{
+    font: 24px bolder ;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    align-content: center;
+}
+
+
+#overlaydance
+{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.75);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#overlaylit
+{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.75);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#overlayact
+{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.75);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#overlaygame
+{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.75);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#overlaywin
+{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.75);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#overlayphoto
+{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.75);
+    z-index: 2;
+    cursor: pointer;
+}
+  
+#text
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    color: rgb(25, 24, 24);
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+} 
+
+#text1
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(15, 14, 14);
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+} 
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: var(--color1);
+  }
+  
+  li {
+    float: right;
+    color: var(--color1);
+  }
+  
+  li a {
+    display: block;
+    padding: 20px;
+    color: var(--color1);
+    font-size: 1.3vw;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    font-size: 1.5vw;
+    font-weight: 1200;
+  }
+
+.button
+{
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding:15px;
+    border: none;
+    border-radius: 2.5px;
+    margin:10px;
+    width:100px;
+    transition: all .4s;
+}
+
+.button:hover
+{
+    border: none;
+    background-color: rgb(106, 136, 235);
+    padding: 20px;
+}
+
+ul
+{
+    list-style-type: none;
+    margin-left: 25px;
+}
+

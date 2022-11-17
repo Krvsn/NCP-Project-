@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WD</title>
+    <style>
+    * {box-sizing: border-box;}
+    body {font-family: "Lato", sans-serif;}
+    </style>
+    <link rel="stylesheet" href="coursepage2.css">
+</head>
+<body bgcolor="mistyrose">
+<div class="pic">
+<img src="wdpage1.jpg" width=100% height="400"><br><br>
+<div class="content">
+<h1>WEB DEVELOPMENT</h1>
+</div></div>
+<div class="tabw">
+    <button class="leftkeys" onclick="attractions(event, 'overview')" id="defaultOpen">Overview</button>
+    <button class="leftkeys" onclick="attractions(event, 'curriculum')">Curriculum</button>
+    <button class="leftkeys" onclick="attractions(event, 'prerequisites')">Prerequisites</button>
+    <button class="leftkeys" onclick="attractions(event, 'instructor')">Instructor</button>
+  </div>
+  
+  <div id="overview" class="tabcontentw">
+    <h3>COURSE OVERVIEW</h3>
+    <dl>
+        <dd style="font-size: 20px;">Exposure to Three Major Programming Languages
+            First, Mark will introduce you to HTML5, HyperText Markup Language, used to contain the content elements of web and mobile sites. Next, you'll be introduced to CSS, Cascading StyleSheet Language, used to add design and style to web presentations. Finally, Mark will introduce you to Javascript, one of the most important and fastest growing languages used today.
+            
+            Dynamic Course Design
+            This course is designed to give you a preview of what professional web development work is like. You'll use some of the same languages and techniques used by professional web developers every day. With fascinating, fast paced lectures, code samples, and challenging lab exercises (solutions provided) you'll gain a sense of what it's like to work in the web development field.
+            
+            Thousands have learned web development and programming from Mark Lassoff. Join Introduction for Web Development today and start your path towards mastering this exciting and challenging field.</dd>
+        <br>
+        <dd style="font-size: 20px;">- 1.5 hours on-demand video</dd>
+        <dd style="font-size: 20px;">- 10 downloadable resources</dd>
+        <dd style="font-size: 20px;">- Full lifetime access</dd>
+        <dd style="font-size: 20px;">- Access on mobile and TV</dd>
+        <dd style="font-size: 20px;">- Certificate of completion</dd>
+      </dl>
+  </div>
+  
+  <div id="curriculum" class="tabcontentw">
+    <h3>CURRICULUM</h3>
+    <dl>
+    <dd style="font-size: 20px;">This course is designed to start you on a path toward future studies in web development and design, no matter how little experience or technical knowledge you currently have. The web is a very big place, and if you are the typical internet user, you probably visit several websites every day, whether for business, entertainment or education.</dd>
+    <br>
+    <dd style="font-size: 20px;">By the end of this course you’ll be able to describe the structure and functionality of the world wide web, create dynamic web pages using a combination of HTML, CSS, and JavaScript, apply essential programming language concepts when creating HTML forms, select an appropriate web hosting service, and publish your webpages for the world to see.</dd>
+    <br>
+    <dd style="font-size: 20px;">Module 1 – Course Overview and Website Structure and Hosting</dd>
+    <dd style="font-size: 20px;">Module 2 – Designing Your Own Website: HTML Basics</dd>
+    <dd style="font-size: 20px;">Module 3 – Introduction to Programming Using JavaScript</dd>
+    <dd style="font-size: 20px;">Module 4 – Websites with Style: CSS Properties, Colors and Fonts</dd>
+    <dd style="font-size: 20px;">Module 5 – Creating HTML Forms</dd>
+    <dd style="font-size: 20px;">Module 6 – Creating Web Applications</dd>
+    </dl>
+  </div>
+  
+
+  <div id="prerequisites" class="tabcontentw">
+    <h3>PREREQUISITES</h3>
+    <dl>
+        <dd style="font-size: 20px;">You don't need to prepare or download any materials to get started. Everything you need will be covered within the first few videos.
+        </dd><br>
+    </dl>
+  </div>
+  
+
+  <div id="instructor" class="tabcontentw">
+    <h3>INSTRUCTOR</h3>
+    <u><p style="font-size: 20px;">Rob Dey</p></u>
+    <dl><br>
+        <dd style="font-size: 20px;">-4.0 INSTRUCTOR RATINGS</dd>
+        <dd style="font-size: 20px;">-32789 REVIEWS</dd>
+        <dd style="font-size: 20px;">-25167 STUDENTS</dd>
+        <dd style="font-size: 20px;">-17 COURSES</dd><br>
+        <dd style="font-size: 20px;">Hello there! I'm Rob Dey and I'm a software engineer with expertise in full-stack (front/back-end) web development. Over the last 10+ years I've built software for Coca-Cola, Toyota, Newell Rubbermaid, Edison Nation, First Data, Bennigan's, and more. I've also founded my own profitable startup. I'm currently developing EdTech software for musicians.</dd>
+    </dl>
+  </div>
+  
+<script>
+    function attractions(event, place) {
+      var i, tabcontent, leftkeys;
+      tabcontent = document.getElementsByClassName("tabcontentw");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      leftkeys = document.getElementsByClassName("leftkeys");
+      for (i = 0; i < leftkeys.length; i++) {
+        leftkeys[i].className = leftkeys[i].className.replace(" active", "");
+      }
+      document.getElementById(place).style.display = "block";
+      event.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html> 
+
+
+
+

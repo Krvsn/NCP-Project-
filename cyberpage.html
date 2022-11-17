@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>cs</title>
+    <style>
+    * {box-sizing: border-box;}
+    body {font-family: "Lato", sans-serif;}
+    </style>
+    <link rel="stylesheet" href="coursepage2.css">
+</head>
+<body bgcolor="honeydew">
+<div class="pic">
+<img src="cyberpage3.jpg" width=100% height="400"><br><br>
+<div class="content">
+<h1>CYBER SECURITY</h1>
+</div></div>
+<div class="tabc">
+    <button class="leftkeys" onclick="attractions(event, 'overview')" id="defaultOpen">Overview</button>
+    <button class="leftkeys" onclick="attractions(event, 'curriculum')">Curriculum</button>
+    <button class="leftkeys" onclick="attractions(event, 'prerequisites')">Prerequisites</button>
+    <button class="leftkeys" onclick="attractions(event, 'instructor')">Instructor</button>
+  </div>
+  
+  <div id="overview" class="tabcontentc">
+    <h3>COURSE OVERVIEW</h3>
+    <dl>
+        <dd style="font-size: 20px;">Learn a practical skill-set in defeating all online threats, including - advanced hackers, trackers, malware, zero days, exploit kits, cybercriminals and more.  
+            
+            Covering all major platforms - Windows 7, Windows 8, Windows 10, MacOS and Linux.
+            
+            We explore the Darknet and mindset of the cyber criminal. Covering malware, exploit kits, phishing, zero-day vulnerabilities and much more.
+            
+            You will learn about the global tracking and hacking infrastructures that nation states run. Covering the NSA, FBI, CIA, GCHQ, China’s MSS and other intelligence agencies capabilities.
+            
+            You will understand the foundations of operating system security and privacy functionality. A close look at the new Windows 10 privacy issues and how to best mitigate them.
+            
+            There is a complete easy to follow crash course on encryption, how encryption can be bypassed and what you can do to mitigate the risks.
+            
+            Master defenses against phishing, SMShing, vishing, identity theft, scam, cons and other social engineering threats.
+            
+            Finally we cover the extremely important, but underused security control of isolation and compartmentalization. Covering sandboxes, application isolation, virtual machines, Whonix and Qubes OS.
+         </dd>
+        <br>
+        <dd style="font-size: 20px;">- 12 hours on-demand video</dd>
+        <dd style="font-size: 20px;">- 1 downloadable resources</dd>
+        <dd style="font-size: 20px;">- Full lifetime access</dd>
+        <dd style="font-size: 20px;">- Access on mobile and TV</dd>
+        <dd style="font-size: 20px;">- Certificate of completion</dd>
+      </dl>
+  </div>
+  
+  <div id="curriculum" class="tabcontentc">
+    <h3>CURRICULUM</h3>
+    <dl>
+    <dd style="font-size: 20px;">To understand the Cyber security Course Syllabus for Specialization Certifications, let’s look at the syllabus of the Cyber security Course offered by Intellipaat.</dd>
+    <br>
+    <dd style="font-size: 20px;">Module 1 – Cyber Defense</dd>
+    <dd style="font-size: 20px;">Module 2 – Cyber Ethics, Cyber Law and Cyber Policy</dd>
+    <dd style="font-size: 20px;">Module 3 – Information Systems</dd>
+    <dd style="font-size: 20px;">Module 4 – Data Communications & Networking</dd>
+    <dd style="font-size: 20px;">Module 5 – Digital Forensics</dd>
+    <dd style="font-size: 20px;">Module 6 – Information Technology</dd>
+    <dd style="font-size: 20px;">Module 7 – Security Systems</dd>
+    </dl>
+  </div>
+  
+
+  <div id="prerequisites" class="tabcontentc">
+    <h3>PREREQUISITES</h3>
+    <dl>
+        <dd style="font-size: 20px;">-A basic understanding of using operating systems, networks, and the Internet. Be able to download and install software. A willingness to learn.</dd><br>
+        <dd style="font-size: 20px;">-Please note this is Volume 1 of 4 of the complete course. After the completion of all 4 volumes, you will know more than 80% of security professionals, government and law enforcement agents and even expert hackers about maintaining security, privacy, and anonymity.</dd><br>
+    </dl>
+  </div>
+  
+
+  <div id="instructor" class="tabcontentc">
+    <h3>INSTRUCTOR</h3>
+    <u><p style="font-size: 20px;">Nathan House</p></u>
+    <dl><br>
+        <dd style="font-size: 20px;">-4.5 INSTRUCTOR RATINGS</dd>
+        <dd style="font-size: 20px;">-73864 REVIEWS</dd>
+        <dd style="font-size: 20px;">-324477 STUDENTS</dd>
+        <dd style="font-size: 20px;">-7 COURSES</dd><br>
+        <dd style="font-size: 20px;">I am working as Computer Scientist at Adobe. I have 7 years of extensive experience in Programming. I am a Machine Learning enthusiast and have 4+ years of experience in Machine Learning.
+
+            I am very passionate about learning the latest developments in Computer Vision and Machine Learning and like sharing my knowledge with others.</dd>
+    </dl>
+  </div>
+  
+<script>
+    function attractions(event, place) {
+      var i, tabcontent, leftkeys;
+      tabcontent = document.getElementsByClassName("tabcontentc");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      leftkeys = document.getElementsByClassName("leftkeys");
+      for (i = 0; i < leftkeys.length; i++) {
+        leftkeys[i].className = leftkeys[i].className.replace(" active", "");
+      }
+      document.getElementById(place).style.display = "block";
+      event.currentTarget.className += " active";
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html> 
+
+
+
+
