@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root><page name="paymentsuccess">
+
+<!DOCTYPE paymentsuccess [
+    <!ELEMENT paymentsuccess (page, Row)>
+    <!ELEMENT page (#PCDATA)>
+    <!ELEMENT Row (#PCDATA)>
+]>
+
+<paymentsuccess>
+    <page name="paymentsuccess">
     <Row  index="1"><✓>Payment Successful!!</✓></Row >
     <Row  index="3">
     <✓>Your course has been purchased.
@@ -7,4 +15,4 @@
     </Row >
     <Row  index="4"><✓>Go back to the homepage.</✓></Row >
     </page>
-</root>
+</paymentsuccess>

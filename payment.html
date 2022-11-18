@@ -48,11 +48,6 @@
                 alert("Please enter a valid credit card number.")
                 return false;
             }
-            else if (emon==null || emon=="" || (!(emon.match(letters))))
-            {
-                alert("Please enter a valid month.")
-                return false;
-            }
             else if(eyr==null || eyr=="" || eyr.length != 4 || (!(eyr.match(numbers))))
             {
                 alert("Please enter a valid year.")
@@ -89,6 +84,11 @@
             color: var(--color1);
             min-height:100%;
             position:relative;
+        }
+
+        option {
+            font-family: 'Raleway', sans-serif;
+            
         }
 
         * {
@@ -131,7 +131,7 @@
             border-radius: 10px;
         }
 
-        input[type=text] {
+        input[type=text], select {
             width: 100%;
             margin-bottom: 20px;
             padding: 12px;
@@ -139,6 +139,7 @@
             border-radius: 15px;
             background-color: var(--primary-color);
             color: var(--secondary-color);
+            font-family: 'Raleway' sans-serif;
         }
 
         label {
@@ -241,13 +242,13 @@
     <!--#include file="payment.xml" -->
     <div>
         <ul>
-            <li><img id="icon" style="padding: 20px 28px; height: 25px;" src="img/light1.png" alt= "light" float="right" />
-            <li style="padding-top: 3px;"><a href="#">Profile</a></li>
-            <li style="padding-top: 3px;"><a href="#">About</a></li>
-            <li style="padding-top: 3px;"><a href="#">Cart</a></li>
-            <li style="padding-top: 3px;"><a href="#">Courses</a></li>
+            <li><img id="icon" style="padding: 20px 28px; height: 25px;" src="img/light.png" float="right" /></li>
+            <li style="padding-top: 3px;"><a href="Contact.html">Contact Us</a></li>
+            <li style="padding-top: 3px;"><a href="profile.html">Profile</a></li>
+            <li style="padding-top: 3px;"><a href="avatar.html">About</a></li>
+            <li style="padding-top: 3px;"><a href="payment.html">Cart</a></li>
+            <li style="padding-top: 3px;"><a href="coursepage.html">Courses</a></li>
             <li style="padding-top: 3px;"><a href="homepage.html">Home</a></li>
-            </li>
         </ul>
     <div class="row">
         <div class="col-75">
@@ -281,8 +282,21 @@
                         <input type="text" id="cname" name="cardname" placeholder="John More Doe">
                         <label for="ccnum">Credit card number</label>
                         <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                        <label for="expmonth">Exp Month</label>
-                        <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                        <label for="month">Exp Month</label>
+                        <select name="expmonth" id="expmonth" style="width: 260px;">
+                            <option value="jan">January</option>
+                            <option value="feb">Febuary</option>
+                            <option value="mar">March</option>
+                            <option value="apr">April</option>
+                            <option value="may">May</option>
+                            <option value="june">June</option>
+                            <option value="jul">July</option>
+                            <option value="aug">August</option>
+                            <option value="sept">September</option>
+                            <option value="oct">October</option>
+                            <option value="nov">November</option>
+                            <option value="dec">December</option>
+                        </select>
                         <div class="row">
                         <div class="col-50">
                             <label for="expyear">Exp Year</label>

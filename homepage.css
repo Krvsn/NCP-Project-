@@ -118,20 +118,20 @@ a, a:link, a:visited{
   color: var(--color1);
   text-decoration: none;
 
-}
-
-h3 {
-  font-size: 1.4625vw;
-}
-p {
-  font-size: 1.25vw;
-}
-big {
-  font-size: 1.5vw;
-}
-h5 {
-  font-size: 1.0375vw;
-}
+  }
+  
+  h3 {
+    font-size: 1.4625vw;
+  }
+  p {
+    font-size: 1.25vw;
+  }
+  big {
+    font-size: 1.5vw;
+  }
+  h5 {
+    font-size: 1.0375vw;
+  }
 
 .image:hover {
   transform: scale(1.5);

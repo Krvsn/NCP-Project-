@@ -1,5 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
+
+<!DOCTYPE payment [
+    <!ELEMENT payment(page, Row, Column1, menu)>
+    <!ELEMENT page (#PCDATA)>
+    <!ELEMENT Row (#PCDATA)>
+    <!ELEMENT Column (#PCDATA)>
+    <!ELEMENT Menu (#PCDATA)>
+]>
+
+<homepage>
     <page name="homepage">
     <Row  index="1">
     <Column />
@@ -46,4 +55,4 @@
     <Column>Register Now</Column>
     </Row >
     </page>
-</root>
+</homepage>
