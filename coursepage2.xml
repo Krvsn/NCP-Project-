@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE homepage [
+<!ELEMENT root (worksheet,Row,MACHINELEARNING)>
+<!ELEMENT worksheet (#CDATA)>
+<ATTLIST worksheet name CDATA #FIXED "Sheet1">
+<!ELEMENT Row (#CDATA)>
+<<ATTLIST Row index CDATA #REQUIRED>
+<!ELEMENT MACHINELEARNING (#CDATA)>
+]
+
+<root>
+    <worksheet name="Sheet1">
+        <Row index="4">
+            <MACHINELEARNING>Overview Curriculum Prerequisites Instructor </MACHINELEARNING>
+        </Row>
+        <Row index="6">
+            <MACHINELEARNING>COURSE OVERVIEW</MACHINELEARNING>
+        </Row>
+        <Row index="9"/>
+        <Row index="10">
+            <MACHINELEARNING>CURRICULUM</MACHINELEARNING>
+        </Row>
+        <Row index="12"/>
+        <Row index="13">
+            <MACHINELEARNING>PREREQUISITES</MACHINELEARNING>
+        </Row>
+        <Row index="19"/>
+        <Row index="20">
+            <MACHINELEARNING>INSTRUCTOR</MACHINELEARNING>
+        </Row>
+        <Row index="22">
+            <MACHINELEARNING>HOLCZER BALASZ</MACHINELEARNING>
+        </Row>
+        <Row index="23">
+            <MACHINELEARNING>-4.5 INSTRUCTOR RATINGS -32308 REVIEWS -251605 STUDENTS -33 COURSES</MACHINELEARNING>
+        </Row>
+        <Row index="24">
+            <MACHINELEARNING>My name is Balazs Holczer. I am from Budapest, Hungary. I am qualified as a physicist. At the moment I am working as a simulation engineer at a multinational company. I have been interested in algorithms and data structures and its implementations especially in Java since university. Later on I got acquainted with machine learning techniques, artificial intelligence, numerical methods and recipes such as solving differential equations, linear algebra, interpolation and extrapolation. These things may prove to be very very important in several fields: software engineering, research and development or investment banking. I have a special addiction to quantitative models such as the Black-Scholes model, or the Merton-model. </MACHINELEARNING>
+        </Row>
+    </worksheet>
+</root>
