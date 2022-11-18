@@ -1,0 +1,7 @@
+<!ELEMENT recruit_details (first_name,last_name,user_name,email)>
+
+<!ELEMENT first_name (#PCDATA)>
+
+<!ELEMENT last_name (#PCDATA)>
+
+<!ELEMENT user_name (#PCDATA)>
