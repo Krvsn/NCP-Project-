@@ -1,163 +1,164 @@
 :root {
-    --primary-color: rgb(235,233,233);
-    --secondary-color: rgb(65, 68, 70);
-    --color1: rgb(235,233,233);
-    --bg1: #A7BFE8;
-    --bg2: #466baf;
-  }
-  body, html{
-    font-family: 'Raleway', sans-serif;
-    color:var(--secondary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0%;
-    margin: 0%;
-  }
-  
-  .bimg1, .bimg2, .bimg3, .bimg4{
-    position:relative;
-    background-position:center;
-    background-size:cover;
-    background-attachment:fixed;
-  }
-  .bimg1{
-    background-image: linear-gradient(to right, var(--bg1) , var(--bg2));
-    min-height:100%;
-    color: (--color1);
-  }
-  .bimg2{
-    background-image: linear-gradient(to left, var(--bg1) , var(--bg2));
-    min-height:30vw;
-  }
-  .bimg3{
-    background-image: linear-gradient(to right, var(--bg1) , var(--bg2));
-    min-height:30vw;
-  }
-  .bimg4{
-    background-image: linear-gradient(to left, var(--bg1) , var(--bg2));
-    min-height:30vw;
+  --primary-color: rgb(235,233,233);
+  --secondary-color: rgb(65, 68, 70);
+  --color1: rgb(235,233,233);
+  --bg1: #A7BFE8;
+  --bg2: #466baf;
+}
+body, html{
+  font-family: 'Raleway', sans-serif;
+  color:var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0%;
+  margin: 0%;
+}
 
-  }
-  .btext{
-    position:absolute;
-    top:50%;
-    width:100%;
-    text-align:center;
-    font-size:2.2vw;
-  }
-  .btext .border{
-    color:var(--color1);
-    padding:1.5625vw;
-    font-size:4.109375vw;
-    font-family: 'Lobster', cursive;
-  }
-  .btext .border.trans{
-    color:var(--color1);
-    background-color:transparent;
-    font-size:2.109375vw;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.bimg1, .bimg2, .bimg3, .bimg4{
+  position:relative;
+  background-position:center;
+  background-size:cover;
+  background-attachment:fixed;
+}
+.bimg1{
+  background-image: linear-gradient(to right, var(--bg1) , var(--bg2));
+  min-height:100%;
+  color: (--color1);
+}
+.bimg2{
+  background-image: linear-gradient(to left, var(--bg1) , var(--bg2));
+  min-height:30vw;
+}
+.bimg3{
+  background-image: linear-gradient(to right, var(--bg1) , var(--bg2));
+  min-height:30vw;
+}
+.bimg4{
+  background-image: linear-gradient(to left, var(--bg1) , var(--bg2));
+  min-height:30vw;
 
-  }
-  table{
-    border-spacing: 3.90625vw;
-    border-collapse: separate;
-    columns: var(--color1);
-  }
-  section{
-    background-color: var(--primary-color);
-  }
-  .cursor{
-    display: inline-block;
-    width: 0.15625vw;
-    height: 2.22vw;
-    background-color: #fff;
-    margin-left:  0.4vw;
-    animation: blink .6s linear infinite alternate;
-  }
-  @keyframes blink {
-    0% {opacity: 1;}
-    40% {opacity: 1;}
-    60% {opacity: 0;}
-    100% {opacity: 0;}
-  }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    color: var(--color1);
-  }
-  
-  li {
-    float: right;
-    color: var(--color1);
-  }
-  
-  li a {
-    display: block;
-    padding: 20px;
-    color: var(--color1);
-    font-size: 1.5vw;
-    font-weight: bolder;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    font-size: 1.8vw;
-    font-weight: 1200;
-  }
-  
-  .la a:hover {
-    font-size: 1.8vw;
-    font-weight: 1200;
-  }
+}
+.btext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  font-size:2.2vw;
+}
+.btext .border{
+  color:var(--color1);
+  padding:1.5625vw;
+  font-size:4.109375vw;
+  font-family: 'Lobster', cursive;
+}
+.btext .border.trans{
+  color:var(--color1);
+  background-color:transparent;
+  font-size:2.109375vw;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-  a, a:link, a:visited{
-    color: var(--color1);
-    text-decoration: none;
+}
+table{
+  border-spacing: 3.90625vw;
+  border-collapse: separate;
+  columns: var(--color1);
+}
+section{
+  background-color: var(--primary-color);
+}
+.cursor{
+  display: inline-block;
+  width: 0.15625vw;
+  height: 2.22vw;
+  background-color: #fff;
+  margin-left:  0.4vw;
+  animation: blink .6s linear infinite alternate;
+}
+@keyframes blink {
+  0% {opacity: 1;}
+  40% {opacity: 1;}
+  60% {opacity: 0;}
+  100% {opacity: 0;}
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: var(--color1);
+}
 
-  }
-  h3 {
-    font-size: 1.4625vw;
-  }
-  p {
-    font-size: 1.25vw;
-  }
-  big {
-    font-size: 1.5vw;
-  }
-  h5 {
-    font-size: 1.0375vw;
-  }
+li {
+  float: right;
+  color: var(--color1);
+}
 
-  .image:hover {
-    transform: scale(1.5);
-  }
+li a {
+  display: block;
+  padding: 20px;
+  color: var(--color1);
+  font-size: 1.5vw;
+  font-weight: bolder;
+  background-color: transparent;
+  text-decoration: none;
+}
 
-  .review td {
-    padding-top: 20px;
-    padding: 10px;
-    border: 1px solid rgb(141, 141, 141);
-    border-radius: 10px;
-    border-collapse: collapse;
-  } 
-  #icon {
-    height: 1.953125vw;
-    padding: 1.5625vw 2.1875vw;
-    cursor: pointer;
-    z-index: 2;
-  }
+li a:hover {
+  font-size: 1.8vw;
+  font-weight: 1200;
+}
 
-  #icon:hover {
-    transform: scale(1.4);
-  }
+.la a:hover {
+  font-size: 1.8vw;
+  font-weight: 1200;
+}
 
-  .light {
-    --primary-color: rgb(65, 68, 70);
-    --secondary-color: rgb(208, 223, 235);
-    --color1: #2d3132;
-    --bg1: #7fa6eb;
-    --bg2: #3461b4;
-  }
+a, a:link, a:visited{
+  color: var(--color1);
+  text-decoration: none;
+
+}
+
+h3 {
+  font-size: 1.4625vw;
+}
+p {
+  font-size: 1.25vw;
+}
+big {
+  font-size: 1.5vw;
+}
+h5 {
+  font-size: 1.0375vw;
+}
+
+.image:hover {
+  transform: scale(1.5);
+}
+
+.review td {
+  padding-top: 20px;
+  padding: 10px;
+  border: 1px solid rgb(141, 141, 141);
+  border-radius: 10px;
+  border-collapse: collapse;
+} 
+#icon {
+  height: 1.953125vw;
+  padding: 1.5625vw 2.1875vw;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#icon:hover {
+  transform: scale(1.4);
+}
+
+.light {
+  --primary-color: rgb(65, 68, 70);
+  --secondary-color: rgb(208, 223, 235);
+  --color1: #2d3132;
+  --bg1: #7fa6eb;
+  --bg2: #3461b4;
+}
