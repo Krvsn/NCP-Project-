@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
-<!DOCTYPE payment [
-    <!ELEMENT payment(page, Row, Column1, menu)>
+<!DOCTYPE homepage [
+    <!ELEMENT homepage(page, Row, Column1, menu)>
     <!ELEMENT page (#PCDATA)>
     <!ELEMENT Row (#PCDATA)>
     <!ELEMENT Column (#PCDATA)>
